@@ -3,8 +3,8 @@ const TodoListDone = ({ item, clickRemoveButtonHandler ,ClickCancelButtonHandler
     <div key={item.id} className="component-style">
       <h2>{item.title}</h2>
       <p>{item.todo}</p>
-      <button onClick={() => clickRemoveButtonHandler(item.id)}>삭제</button>
-      <button onClick={()=> ClickCancelButtonHandler(item.id)}>취소</button>
+      <button className="del" onClick={() => clickRemoveButtonHandler(item.id)}>삭제</button>
+      <button className="cancel" onClick={()=> ClickCancelButtonHandler(item.id)}>취소</button>
     </div>
   );
 };
